@@ -75,10 +75,35 @@ SET ENDERECO = NULL
 WHERE COD_EMP = 1003;
 
 
+-- DELETE - ELIMINAR LINHAS (REGISTROS)
+SELECT * FROM EMPREGADO; -- (verificar qual linha ele está)
+
+DELETE FROM EMPREGADO
+WHERE COD_EMP = 1005;
+
+DELETE FROM EMPREGADO 
+WHERE NOME = 'KAUA' AND SOBRENOME = 'SILVA';
 
 
+SELECT COD_EMP FROM EMPREGADO
+WHERE NOME = 'KAUA' AND SOBRENOME = 'SILVA';
 
+-- inserindo novos valores ** Aqui nesse momento a professora inseriu vários 
+-- valores na tabela em ordem e scripts diferentes. A ideia aqui é criar novos valores e verificar com select 
 
+INSERT INTO DEPARTAMENTO
+	VALUES (101, 'VENDAS');
+    
+INSERT INTO DEPARTAMENTO
+	VALUES
+		   (103, 'INFORMÁTICA'),
+           (104, 'ADMINISTRAÇÃO');
+           
+INSERT INTO DEPARTAMENTO
+	VALUES (105, 'COMPRAS');
+    
+INSERT INTO departamento
+	VALUES (102, 'RH');
 
 
            
